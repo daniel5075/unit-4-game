@@ -13,33 +13,118 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<h1>Crystals Collector!</h1>
-<h2>Target Number: <span id="targetNumber"></span></h2>
-<h2>Your Total Score Is: <span id="totalScore"></span></h2>
-<h2>Wins: <span id="totalWins"></span> Losses: <span id="totalLosses"></span></h2>
-<h2>pick a crystal</h2>
-<br>
-<div class="row">
-    <button id="btn1">
-        <img src="./assets/images/amethyst-2054918_640.jpg">
-    </button>
-
-    <button id="btn2">
-        <img src="./assets/images/crystal-1685590_640.jpg">
-    </button>
-</div>
-<div class="row">
-    <button id="btn3">
-        <img src="./assets/images/crystal-2723145_640.jpg">
-    </button>
-
-    <button id="btn4">
-        <img src="./assets/images/gem-1576233_640.jpg">
-    </button>
-
-</div>
-
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="navbar-brand">Crystals Collector Game!</div>
+    </nav>
+
+    <div class="container">
+
+
+
+        <h2>pick a crystal</h2>
+        <br>
+        <div class="row">
+            <button id="btn1">
+                <img src="./assets/images/amethyst-2054918_640.jpg" style="height:150px">
+            </button>
+
+            <button id="btn2">
+                <img src="./assets/images/crystal-1685590_640.jpg" style="height:150px">
+            </button>
+
+
+            <button id="btn3">
+                <img src="./assets/images/crystal-2723145_640.jpg" style="height:150px">
+            </button>
+
+            <button id="btn4">
+                <img src="./assets/images/gem-1576233_640.jpg" style="height:150px">
+            </button>
+        </div>
+        <div class="row">
+            <h2><span id="winOrlose"></span></h2>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="./assets/images/background.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h2>Target Number: <span id="targetNumber"></span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="./assets/images/background.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h2>Your Total Score Is: <span id="totalScore"></span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="./assets/images/background.jpg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h2>Wins: <span id="totalWins"></span></h2>
+                        <h2>Losses: <span id="totalLosses"></span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-10">
+                <div class="containerBody">
+                    <!-- <div class="card " style="width:900px"> -->
+
+                    <h3> How to Play Crystals Collector </h3>
+                    <p>
+                        You are given a random number to start the game, displayed below under Your Target Total.
+                    </p>
+                    <p>
+                        By clicking one of the four crystals below you will add a specific amount to Your Current
+                        Total.
+                    </p>
+                    <p>
+                        You win the game by clicking on the crystals to get Your Current Total to exactly match Your
+                        Target
+                        Total. You lose the game if Your Current Total goes above the Your Target Total number.
+                    </p>
+                    <p>
+                        The value of each crystal is hidden from you until you click on it. Once clicked, that
+                        amount is
+                        added
+                        to your current total. Pay attention to the value of each crystal you click as you might
+                        need to
+                        click
+                        that amount again!
+                    </p>
+                    <p>
+                        You can click on the same crystal multiple times if you wish - just be careful to not go
+                        over
+                        the Your
+                        Target Total number!
+                    </P>
+                    <p>
+                        Each time when the game re-starts, the game will change the values of each crystal, will
+                        reset
+                        Your
+                        Current Total back to 0, and a new Your Target Total number will be set for you to meet.
+                        Your
+                        Wins and
+                        Losses will be calculated for you.
+                    </p>
+
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

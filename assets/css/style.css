@@ -1,5 +1,27 @@
-/* btn1, btn2, btn3, btn4{
-    position: relative;
-    width: 50px;
-height: 50px;
-} */
+body{
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.navbar {
+    min-height:100px;
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+.navbar-brand{
+    text-align: center !important;
+    font-size: 80px;
+    font-family: cursive;
+    color:#d42222 !important;
+   }
+   .containerBody{
+    background-color:#ffffff;
+    margin:40px;
+}

@@ -26,12 +26,14 @@ function gameReset() {
 }
 function checkWin() {
     if (gameRandomNumber === totalClicked) {
-        winTotal++
+        winTotal++;
+        $("#winOrlose").text("You Won");
         $("#totalWins").html(winTotal);
         gameReset()
     }
     if (gameRandomNumber < totalClicked) {
-        lossTotal++
+        lossTotal++;
+        $("#winOrlose").text("You Lost");
         $("#totalLosses").html(lossTotal);
         gameReset()
     }
@@ -71,7 +73,7 @@ $("#btn1").on("click", Clicked1);
 $("#btn2").on("click", Clicked2);
 $("#btn3").on("click", Clicked3);
 $("#btn4").on("click", Clicked4);
-console.log("Total Score " + totalClicked)
+
 //on click add crystal number to total number
 //check after each click if total number equals games random number, 
 //if less keep playing, if equal-win.  If more-lose (resart game wth new randow numbers
