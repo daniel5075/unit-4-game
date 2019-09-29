@@ -27,13 +27,13 @@ function gameReset() {
 function checkWin() {
     if (gameRandomNumber === totalClicked) {
         winTotal++;
-        $("#winOrlose").text("You Won");
+        $("#winOrlose").text("You Won the Last Game");
         $("#totalWins").html(winTotal);
         gameReset()
     }
     if (gameRandomNumber < totalClicked) {
         lossTotal++;
-        $("#winOrlose").text("You Lost");
+        $("#winOrlose").text("You Lost the Last Game");
         $("#totalLosses").html(lossTotal);
         gameReset()
     }
