@@ -43,27 +43,23 @@ function Clicked1() {
 
     totalClicked = totalClicked + crystalNumber[0];
     $("#totalScore").html(totalClicked);
-    console.log("total Clicked: " + totalClicked);
     checkWin();
 }
 
 function Clicked2() {
     totalClicked = totalClicked + crystalNumber[1];
     $("#totalScore").html(totalClicked);
-    console.log("total Clicked: " + totalClicked);
     checkWin();
 }
 
 function Clicked3() {
     totalClicked = totalClicked + crystalNumber[2];
     $("#totalScore").html(totalClicked);
-    console.log("total Clicked: " + totalClicked);
     checkWin();
 }
 function Clicked4() {
     totalClicked = totalClicked + crystalNumber[3];
     $("#totalScore").html(totalClicked);
-    console.log("total Clicked: " + totalClicked);
     checkWin();
 }
 
@@ -80,6 +76,4 @@ $("#btn4").on("click", Clicked4);
 //running total of number of games won/lost.
 gameStart()
 
-// $("#totalScore").html(totalClicked);
-console.log(gameRandomNumber);
-console.log("Crystal Number " + crystalNumber);
+
