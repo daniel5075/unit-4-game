@@ -1,4 +1,4 @@
-# Crystal Collecot Game
+# Crystal Collector Game
 
 Here's how to play:
 
@@ -15,4 +15,4 @@ You wins if the total score matches the random number from the beginning of the 
 
 The game restarts whenever you win or lose.
 
-Link to game: https://daniel5075.github.io/Unit-4-Game/
+Link to game: https://daniel5075.github.io/unit-4-game/
